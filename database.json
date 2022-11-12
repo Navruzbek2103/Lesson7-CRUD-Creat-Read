@@ -1,14 +1,3 @@
 {
-  "user": [
-    {
-      "id": 1,
-      "user_name": "Navro'zbek Ahmadaliyev",
-      "age": 21
-    },
-    {
-      "user_name": "3ew",
-      "age": "232",
-      "id": 2
-    }
-  ]
+  "user": []
 }

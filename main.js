@@ -49,3 +49,24 @@ const addUser = () => {
 $(".form").addEventListener("submit", (e) => {
   addUser()
 })
+
+
+// ================= Delete item =================
+
+$("tbody").addEventListener("click", (e) => {
+  if(e.target.classList.contains("btn-danger")){
+    let id = e.target.getAttribute("data-delete");
+    deleteFunc(id)
+  }
+
+})
+
+const deleteFunc = (id) => {
+  fetch(`http://localhost:2306/user/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({})
+  })
+}
