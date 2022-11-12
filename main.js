@@ -42,7 +42,7 @@ const addUser = () => {
 
     setTimeout(() => {
       $(".toastify").style.transform = "translate(200%)"
-    }, 2000)
+    }, 1500)
 
   }
   else{
@@ -114,6 +114,10 @@ const updateFunc = () => {
     $(".toastify").style.color = 'white'
     $(".toastify").style.textShadow = '0 0 5px white'
     $(".toastify").style.transform = "translate(0)"
+
+    setTimeout(() => {
+      $(".toastify").style.transform = "translate(200%)"
+    }, 1500)
   }
 
   else{
