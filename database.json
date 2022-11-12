@@ -1,19 +1,14 @@
 {
   "user": [
     {
-      "user_name": "O'zbek",
-      "age": "998",
-      "id": 1
-    },
-    {
       "user_name": "Bek",
       "age": "999",
       "id": 2
     },
     {
-      "user_name": "Navro'zbek",
-      "age": "12",
-      "id": 3
+      "user_name": "Og'abek Usmonov",
+      "age": "45",
+      "id": 4
     }
   ]
 }

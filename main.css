@@ -13,5 +13,5 @@ body{
   font-weight: bold;
   transform: translateX(200%);
   transition: transform 0.4s ease-in;
-  z-index: 99;
+  z-index: 9999999;
 }
