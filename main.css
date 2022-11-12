@@ -1,0 +1,14 @@
+body{
+  overflow-x: hidden;
+}
+
+.toastify{
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  background-color: aqua;
+  padding: 7px 15px;
+  border-radius: 5px;
+  transition: transform 0.4s ease-in;
+  transform: translateX(200%);
+}

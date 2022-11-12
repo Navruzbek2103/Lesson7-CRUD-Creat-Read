@@ -62,11 +62,15 @@ $("tbody").addEventListener("click", (e) => {
 })
 
 const deleteFunc = (id) => {
-  fetch(`http://localhost:2306/user/${id}`, {
-    method: "DELETE",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({})
-  })
+  $(".toastify").style.transform = "translateX(0)"
+  setTimeout(()=>{
+    $(".toastify").style.transform = "translateX(200%)"
+    fetch(`http://localhost:2306/user/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({})
+    })
+  }, 2000)
 }
