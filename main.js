@@ -33,16 +33,32 @@ const addUser = () => {
   const userAge = $("#userAge").value.trim();
 
   if(userName.length === 0 || userAge.length === 0){
-    alert("Please, fill in the user name and user age")
+    // alert("Please, fill in the user name and user age")
+    $(".toastify").innerHTML = "Empty is places"
+    $(".toastify").style.backgroundColor = 'crimson'
+    $(".toastify").style.color = 'white'
+    $(".toastify").style.textShadow = '0 0 5px white'
+    $(".toastify").style.transform = "translate(0)"
+
+    setTimeout(() => {
+      $(".toastify").style.transform = "translate(200%)"
+    }, 2000)
+
   }
   else{
-    fetch("http://localhost:2306/user", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({user_name: userName, age: userAge})
-    })
+    $(".toastify").innerHTML = 'Success'
+    $(".toastify").style.backgroundColor = 'aqua'
+    $(".toastify").style.transform = "translateX(0)"
+    setTimeout(() =>{
+      $(".toastify").style.transform = "translateX(200%)"
+      fetch("http://localhost:2306/user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({user_name: userName, age: userAge})
+      })
+    }, 1500)
   }
 }
 

@@ -1,3 +1,19 @@
 {
-  "user": []
+  "user": [
+    {
+      "user_name": "Navro'zbek",
+      "age": "33",
+      "id": 1
+    },
+    {
+      "user_name": "Otabek",
+      "age": "11",
+      "id": 2
+    },
+    {
+      "user_name": "Kim",
+      "age": "44",
+      "id": 3
+    }
+  ]
 }
