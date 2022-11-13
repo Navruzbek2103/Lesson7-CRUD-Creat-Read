@@ -9,6 +9,16 @@ function getUser(){
 getUser()
 
 function renderData(data = []){
+  if(data.length > 0){
+    let averageAge = data.reduce((a, b) => {
+      return (a * 1) + (b.age * 1);
+    }, 0)
+    $("#average-age").innerHTML = (averageAge / data.length).toFixed(1);
+  }
+  else{
+    $("#average-age").innerHTML = 0;
+
+  }
   data.length > 0 ? data.forEach(item =>{
     const tr = createElement(
       "tr",
