@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>SignIn page</title>
+</head>
+<body>
+
+  <main>
+    <section class="login">
+      <div class="container">
+        <div class="col-md-12">
+          <div class="card p-3 shadow">
+            <h4 class="text-primary text-center">SignIn</h4>
+            <form action="#" class="form" id="login">
+              <label class="w-100 my-2">
+                <input id="user" type="text" class="form-control p-2" placeholder="Enter your login or email">
+              </label>
+              <label class="w-100 my-2">
+                <input id="password" type="password" class="form-control p-2" placeholder="Enter your password">
+              </label>
+              <button type="submit" class="btn btn-primary w-100 p-2">LOGIN</button>
+              <hr>
+              <a href="./registration.html" class="link text-center d-block text-uppercase">Ro'yhatdan o'tish</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./plugin.js"></script>
+  <script src="./auth.js"></script>
+</body>
+</html>

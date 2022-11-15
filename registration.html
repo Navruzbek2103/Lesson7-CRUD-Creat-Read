@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./main.css">
+  <title>SignUp page</title>
+</head>
+<body>
+
+  <main>
+    <section class="login">
+      <div class="container">
+        <div class="modal-toast hide-toast alert alert-danger p-5 w-50 mt-5 mx-auto"></div>
+        <div class="col-md-12">
+          <div class="card p-3 shadow">
+            <h4 class="text-success text-center">SignUp</h4>
+            <form action="#" class="form" id="reg">
+              <label class="w-100 my-2">
+                <input id="userName" required type="text" class="form-control p-2" placeholder="Enter your login or email">
+              </label>
+              <label class="w-100 my-2">
+                <input id="userPassword" required type="password" class="form-control p-2" placeholder="Enter your password">
+              </label>
+              <button type="submit" class="btn btn-success w-100 p-2">SignUp</button>
+              <hr>
+              <a href="./login.html" class="link text-center d-block text-uppercase text-success">Kirish</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="./plugin.js"></script>
+  <script src="./auth.js"></script>
+</body>
+</html>
