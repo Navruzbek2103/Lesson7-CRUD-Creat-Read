@@ -152,3 +152,20 @@ function setValue(data){
   $("#userNameEdit").value = data.user_name;
   $("#userAgeEdit").value = data.age;
 }
+
+function logined(){
+  let userName = localStorage.getItem("userName");
+  if(userName){
+    $("#user").innerHTML = userName
+  }
+  else{
+    window.location.replace("./login.html")
+  }
+
+}
+logined()
+
+$("#out").addEventListener("click", () => {
+  localStorage.clear();
+  logined()
+})
